@@ -1,0 +1,164 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  color: #183b2b;
+  background: #f3f8f1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #174c35;
+  color: white;
+}
+
+header h2 {
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #c7edb5;
+}
+
+main {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 8%;
+}
+
+.hero {
+  max-width: 850px;
+  text-align: center;
+  padding: 60px 30px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #e1f1d8, #b9dfb0);
+  box-shadow: 0 10px 30px rgba(23, 76, 53, 0.12);
+}
+
+.hero h1 {
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #174c35;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 0 auto 30px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #355846;
+}
+
+.button {
+  display: inline-block;
+  margin: 8px;
+  padding: 14px 24px;
+  border-radius: 8px;
+  background: #17633f;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background: #10482d;
+  transform: translateY(-2px);
+}
+
+.button.secondary {
+  background: #ffffff;
+  color: #17633f;
+  border: 2px solid #17633f;
+}
+
+.button.secondary:hover {
+  background: #eaf5e5;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  background: #174c35;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .hero {
+    padding: 40px 20px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+}
+
+/* Report form layout */
+#sightingForm {
+  max-width: 500px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+#sightingForm label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+#sightingForm input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #a8c5b0;
+  border-radius: 8px;
+  font-size: 16px;
+  background: white;
+}
+
+#sightingForm button {
+  align-self: center;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+#formMessage {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
